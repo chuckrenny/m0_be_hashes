@@ -1,5 +1,5 @@
 
-Activity:
+# Activity:
 
 # In the below exercises, write code that achieves
 # the desired result. To check your work, run this
@@ -7,46 +7,58 @@ Activity:
 # `ruby hashes_1.rb`
 
 foods = {"apples": 23, "grapes": 507, "eggs": 48}
-p zoo
+p foods
 
 # Write code that prints all of the 'keys' of the foods variable 
 # you created above:
 # YOUR CODE HERE
+p foods.keys
 
 # Write code that prints all of the 'values' of the foods variable 
 # you created above:
 # YOUR CODE HERE
+p foods.values
 
 # Write code that prints the value of the second food of the foods variable 
 # you created above:
 # YOUR CODE HERE
+p foods[:grapes]
 
 # Write code that adds a food to the foods hash. 
 # Then, print the updated hash:
 # YOUR CODE HERE
-
+foods[:breadh] = 20
+p foods
 
 #-------------------
 # Part 2: Email
 #-------------------
-
-
 # Think about all the pieces of information associated with one single email in your inbox.
 # It has a sender, a subject, ...
 
 # Declare a variable that stores hash. Each key should be an attribute of an email and each
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
+email = {
+  sender: "cren04@syr.edu",
+  recipient: "charlesren99@gmail.com",
+  cc: ["crenfiller@gmail.com", "anotherfiller@gmail.com"],
+  subject: "Turing School Mod 0 Completion",
+  body: "I finished Mod 0! Can't wait to start Mod 1!"
+}
 
 # Write code that prints your email hash to the terminal.
+p email
 
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
 # YOUR CODE HERE
+p email.keys
 
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
 # YOUR CODE HERE
+p email.values
 
 
 #-------------------
@@ -97,3 +109,28 @@ p posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+arr_email = [
+  {
+    sender: "cren04@syr.edu",
+    recipient: "charlesren99@gmail.com",
+    cc: ["crenfiller@gmail.com", "anotherfiller@gmail.com"],
+    subject: "Turing School Mod 0 Completion",
+    body: "I finished Mod 0! Can't wait to start Mod 1!"
+  },
+  {
+    sender: "Turingschool@gmail.edu",
+    recipient: "charlesren99@gmail.com",
+    cc: ["admissions@gmail.com"],
+    subject: "Financial Aid",
+    body: "Congratulations! You quality for financial aid to attend Turing School!"
+  },
+  {
+    sender: "fsa@gov.edu",
+    recipient: "charlesren99@gmail.com",
+    cc: [],
+    subject: "Debt Delinquency",
+    body: "Unfortunately, you now owe us 25 grand. Pay by friday June 9th or we're taking your dog as restitution."
+  }
+]
+
+p arr_email
